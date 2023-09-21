@@ -1,0 +1,225 @@
+body {
+  margin: 0;
+  /* font-family: "Inclusive Sans", sans-serif; */
+  font-family: 'Lobster Two', cursive;
+  background: rgb(164, 19, 90);
+  background: linear-gradient(
+    90deg,
+    rgba(164, 19, 90, 1) 0%,
+    rgba(142, 11, 141, 0.9724264705882353) 22%,
+    rgba(255, 0, 241, 1) 100%
+  );
+}
+
+h1 {
+  text-align: center;
+  font-size: 100px;
+}
+
+.Con-2 {
+  display: none;
+}
+
+canvas {
+  display: block;
+}
+
+.Contenedor {
+  /* display: flex; */
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.Con {
+  display: flex;
+  place-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.Texto {
+  display: none;
+}
+
+.Texto h2 {
+  font-size: 50px;
+}
+
+.Texto2 {
+  display: none;
+}
+
+.Texto2 h2 {
+  font-size: 50px;
+}
+
+.foto-main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
+.btn-regresar a {
+  display: block;
+  width: 130px;
+  text-align: center;
+  padding: 8px 0;
+  background-color: #f9f9f9;
+  border-radius: 50px;
+  border: 1px solid yellow;
+  text-decoration: none;
+  color: #000;
+  transition: all 500ms;
+  font-weight: 700;
+}
+
+.btn-regresar a:hover {
+  transform: scale(1.1);
+  background-color: yellow;
+  border: 1px solid #fff;
+}
+
+.btn-regresar {
+  display: none;
+}
+
+#B12 {
+  margin-left: 30px;
+}
+
+.foto {
+  display: none;
+  justify-content: center;
+}
+
+.foto img {
+  width: 300px;
+}
+
+.Button {
+  font-family: monospace;
+  font-size: x-large;
+  transition: all ease 300ms;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #fa2247;
+  color: #eee;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+
+.Button:hover {
+  /* transform: scale(1.1); */
+  border-radius: 8px;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  color: black;
+  background-color: white;
+  border: 1px solid #fa2247;
+}
+
+.Contenedor-Binicio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.Con-Emergente {
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+}
+
+.cua {
+  display: none;
+  position: fixed;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  padding: 30px;
+  background-color: #e0e0e0;
+  border: 1px solid #fa2247;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  animation: aparecer 0.5s ease-out;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-20px);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateX(-50%) translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+@media (max-width: 468px) {
+  body {
+    /* background: linear-gradient(100deg, blue, purple, pink); */
+  }
+
+  .foto-main{
+    margin-top: 100px;
+  }
+
+  .foto-main img{
+    width: 300px;
+  }
+
+  .Con-2 h1{
+    font-size: 40px;
+  }
+
+  .Contenedor{
+    display: flex;
+    flex-direction: column;    
+  }
+
+
+  .Flor{
+    width: 100%;
+    margin-left: -10px;
+    margin-top: -140px;
+  }
+
+  .texto-imagen{
+    margin-top: -10px;
+  }
+
+  .Texto h2{
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .Texto2 h2{
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .foto img{
+    width: 300px;
+  }
+
+  .btn-regresar{
+    position: absolute;
+    bottom: 20px;
+    left: 30%;
+  }
+}
+
